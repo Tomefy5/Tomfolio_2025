@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Lexend:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased relative;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+  p {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-card backdrop-blur-lg border border-neon-blue/20 rounded-xl transition-all duration-300 relative z-10;
+  }
+  
+  .glass-panel:hover {
+    @apply animate-neon-pulse;
+    box-shadow: 0 0 5px theme(colors.neon.blue), 0 0 20px theme(colors.neon.glow);
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold mb-8 animate-fade-up text-neon-blue font-display;
+  }
+  
+  .nav-link {
+    @apply text-foreground/80 hover:text-neon-blue transition-all duration-200 font-mono relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-neon-blue after:origin-bottom-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 hover:after:origin-bottom-left;
+  }
+
+  .skill-item {
+    @apply animate-fade-up;
+    animation-delay: calc(var(--animation-delay) * 100ms);
+  }
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply bg-neon-blue/20;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
