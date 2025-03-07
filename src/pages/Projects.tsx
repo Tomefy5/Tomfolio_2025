@@ -6,6 +6,11 @@ import ecommerce from "../images/all_projects/e-commerce.jpeg";
 import dahsboardAnalytics from "../images/all_projects/dashboard-analytics.jpeg";
 import appReservation from "../images/all_projects/reservation-app.jpeg";
 import architectureBackend from "../images/all_projects/architecture-backend.jpeg";
+import taskflow from "../images/projects/taskflow.png";
+import puzzingo from "../images/projects/puzzingo.png";
+import tomfolio from "../images/projects/tomfolio_2025.png"
+import aes from "../images/projects/AES.jpg"
+import tsena_app from "../images/projects/tesna_app.png"
 
 const Projects = () => {
   return (
@@ -65,39 +70,39 @@ const ProjectCard = ({ title, description, image, link, technologies }) => (
 
 const allProjects = [
   {
-    title: "Portfolio Personnel",
-    description: "Site web personnel avec animations et design moderne",
-    image: portfolioPerso,
-    link: "#",
+    title: "Tomfolio",
+    description: "This is my developer portfolio",
+    image: tomfolio,
+    link: "https://tomfolio-2025.vercel.app/",
     technologies: ["React", "TailwindCSS", "Framer Motion"]
   },
   {
-    title: "E-commerce App",
-    description: "Plateforme e-commerce complète avec paiement",
-    image: ecommerce,
-    link: "#",
-    technologies: ["Next.js", "Stripe", "MongoDB"]
+    title: "TaskFlow",
+    description: "Interactive tool to organize, track, and automate tasks.",
+    image: taskflow,
+    link: "https://taskflow-frontend-seven.vercel.app",
+    technologies: ["React", "NodeJS", "MongoDB", "Shadcn-UI"]
   },
   {
-    title: "Dashboard Analytics",
-    description: "Interface d'analyse de données en temps réel",
-    image: dahsboardAnalytics,
-    link: "#",
-    technologies: ["React", "D3.js", "Node.js"]
+    title: "Puzzingo",
+    description: "Fun puzzle application with interactive challenges.",
+    image: puzzingo,
+    link: "https://puzzingo.vercel.app",
+    technologies: ["React", "React-Dnd"]
   },
   {
-    title: "App de Réservation",
-    description: "Application de réservation de services",
-    image: appReservation,
-    link: "#",
-    technologies: ["React Native", "Firebase", "Redux"]
+    title: "AES",
+    description: "It’s a program that encrypts and decrypts files using Crypto++",
+    image: aes,
+    link: "https://github.com/Tomefy5/AES-1",
+    technologies: ["C++", "Crypto++"]
   },
   {
-    title: "API REST",
-    description: "Architecture backend scalable pour SaaS",
-    image: architectureBackend,
-    link: "#",
-    technologies: ["Node.js", "PostgreSQL", "Docker"]
+    title: "Tsena-app",
+    description: "Tsena-App is a shopping management app with currency conversion, shopping lists, and price calculation.",
+    image: tsena_app,
+    link: "https://tsena-app.vercel.app/",
+    technologies: ["React", "TailwindCSS"]
   }
 ];
 

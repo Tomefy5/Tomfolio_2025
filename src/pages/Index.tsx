@@ -39,6 +39,8 @@ import resolutionLogo from "../images/svg/light-bulb.svg";
 import linuxLogo from "../images/svg/linux.svg";
 import taskflow from "../images/projects/taskflow.png";
 import puzzingo from "../images/projects/puzzingo.png";
+import tomfolio from "../images/projects/tomfolio_2025.png"
+import aes from "../images/projects/AES.jpg"
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -456,28 +458,29 @@ const projects = [
   {
     title: "Taskflow",
     description:
-      "Outil interactif pour organiser, suivre et automatiser les tâches.",
+      "Interactive tool to organize, track, and automate tasks.",
     image: taskflow,
     link: "https://taskflow-frontend-seven.vercel.app",
   },
   {
     title: "Puzzingo",
-    description: "Application de puzzle ludique avec des défis interactifs.",
+    description: "Fun puzzle application with interactive challenges.",
     image: puzzingo,
     link: "https://puzzingo.vercel.app",
   },
   {
-    title: "Taskflow",
+    title: "Tomfolio",
     description:
-      "Outil interactif pour organiser, suivre et automatiser les tâches.",
-    image: taskflow,
-    link: "#",
+      "This is my developer portfolio",
+    image: tomfolio,
+    link: "https://tomfolio-2025.vercel.app/",
   },
   {
-    title: "Puzzingo",
-    description: "Application de puzzle ludique avec des défis interactifs.",
-    image: puzzingo,
-    link: "#",
+    title: "AES",
+    description:
+      "It’s a program that encrypts and decrypts files using Crypto++",
+    image: aes,
+    link: "https://github.com/Tomefy5/AES-1",
   },
 ];
 
